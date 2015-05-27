@@ -1,0 +1,17 @@
+/**
+ * File:    stacked.cga
+ * Created: 24 Nov 2014 15:40:12 GMT
+ * Author:  sschubiger
+ */
+
+version "2014.0"
+
+attr height = 100
+
+Init-->
+	s('1,height,'1) 
+	i("cylinder.obj") 
+	split(y) {'0.3:Slice("#FF0000") | '0.3:Slice("#00FF00") | '0.4:Slice("#0000FF")}
+
+Slice(color)-->
+	color(color)

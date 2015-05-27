@@ -1,0 +1,18 @@
+/**
+ * File:    wachstum.cga
+ * Created: 24 Nov 2014 10:14:22 GMT
+ * Author:  sschubiger
+ */
+
+attr scaleh = 1000
+attr scalev = 1000
+attr FORTUNE10M(idx) = 0
+attr AREA_HA = 0
+
+Init-->
+	color("#ff0000")
+	extrude(FORTUNE10M(0)*100)
+	
+	
+Inner-->
+	extrude(FORTUNE10M(0)*10000)
